@@ -25,6 +25,11 @@
           ./hosts/mu7iny/configuration.nix
         ];
       };
+      vbox = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; };
+        modules = [ ./hosts/vbox/configuration.nix ];
+      };
     };
   };
 }
