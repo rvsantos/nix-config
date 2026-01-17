@@ -22,7 +22,7 @@
         inherit system;
         specialArgs = { inherit inputs; };
         modules = [
-          ./hosts/desktop/configuration.nix
+          ./hosts/mu7iny/configuration.nix
         ];
       };
     };
